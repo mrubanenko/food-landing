@@ -1,0 +1,98 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  margin-top: 44px;
+  padding-bottom: 72px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+
+  &__col-brand {
+    padding-right: 60px;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: var(--color-gray-light);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  &__social {
+    display: flex;
+
+    gap: 16px;
+    &-link {
+      width: 48px;
+      height: 48px;
+      background-color: var(--color-accent-light);
+      border-radius: 4px;
+      justify-content: center;
+
+      & img {
+        width: 24px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__list,
+  &__contact {
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--color-gray-light);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 20px;
+    color: var(--color-gray-light);
+    font-size: 16px;
+  }
+}
+
+@include tablet {
+  .footer {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+}
+
+@include mobile {
+  .footer {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__bottom {
+      font-size: 12px;
+    }
+  }
+}

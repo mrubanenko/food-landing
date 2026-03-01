@@ -1,0 +1,97 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.review {
+
+  &__wrapper {
+    @include flex-center(false);
+    align-items: center;
+    position: relative;
+  }
+
+  &__image {
+    position: relative;
+    top: -30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 420px;
+      background: var(--color-accent-light);
+      z-index: -1;
+    }
+  }
+
+  &__card {
+    background-color: var(--color-accent-light);
+    padding: 60px 80px;
+    border-radius: 4px;
+    flex: 1;
+  }
+
+  &__name {
+    @include fluid-text(24);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  &__role {
+    @include fluid-text(16);
+    color: var(--color-gray);
+    margin-bottom: 8px;
+  }
+
+  &__rating {
+    font-size: 26px;
+    color: #f4b400;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  &__controls {
+    @include flex-center(true);
+    gap: 12px;
+  }
+
+  &__controls button {
+    @include flex-center(true);
+    @include square(36px);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--color-accent);
+    transition: 0.2s;
+  }
+
+  &__controls button:first-child {
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+      color: var(--color-light);
+    }
+  }
+
+  &__controls button:last-child {
+    color: var(--color-light);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+@include tablet {
+  .review__image {
+    display: none;
+  }
+}

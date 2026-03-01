@@ -1,0 +1,89 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.header {
+  padding-top: 60px;
+  background-color: var(--color-accent-light);
+
+  @include desktop {
+    padding-top: 28px;
+  }
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+
+    @include mobile {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    font-size: 32px;
+    font-weight: 600;
+
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+
+  &__menu {
+    margin: auto;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+
+      @include desktop {
+      column-gap: 20px;
+    }
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__login {
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__button {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+
+    @include hover {
+      color: var(--color-accent-light);
+      background-color: var(--color-dark);
+    }
+  }
+}

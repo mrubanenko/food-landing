@@ -1,0 +1,20 @@
+@use "fonts" as *;
+@use "globals" as *;
+@use "media" as *;
+@use "mixins" as *;
+@use "normalize" as *;
+@use "utils" as *;
+@use "variables" as *;
+
+@use "blocks/mobile-overlay";
+@use "blocks/сross-button";
+@use "blocks/burger-button";
+@use "blocks/hero";
+@use "blocks/section";
+@use "blocks/header";
+@use "blocks/services";
+@use "blocks/menu";
+@use "blocks/chef";
+@use "blocks/review";
+@use "blocks/subscribe";
+@use "blocks/footer";

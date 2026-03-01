@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Food</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo">FOOD</a>
+        <nav class="header__menu hidden-mobile" aria-label="Main navigation">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Menu</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">About us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Restaurant</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="/" class="header__login hidden-mobile">Login</a>
+        <a href="/" class="header__button button hidden-mobile"> Sign up </a>
+        <button
+          class="button__burger-menu burger-button visible-mobile"
+          type="button"
+          aria-controls="mobileOverlay"
+          aria-label="Open navigation menu"
+          onclick="mobileOverlay.showModal()"
+        >
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Good <span>Food</span> & Taste For Daily Life
+            </h1>
+
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              semper vitae eleifend nunc, quam imperdiet. Lorem ipsum dolor sit
+              amet, conse ctetur adipiscing elit. Molestie semper vitae eleifend
+              nunc.
+            </p>
+
+            <div class="hero__buttons">
+              <a href="/" class="hero__order-button">Order Now</a>
+              <a href="/" class="hero__get-button">Get the Food</a>
+            </div>
+          </div>
+
+          <img
+            src="images/hero-image.svg"
+            alt="Delicious food"
+            class="hero__image"
+            width="617"
+            height="393"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <section class="about-us">
+      
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <header class="services__header">
+          <h2 class="services__title">Our <span>Services</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Molestie
+            semper vitae elit eleif.
+          </p>
+        </header>
+
+        <div class="services__list">
+          <article class="service-card">
+            <img
+              src="images/Delivery.svg"
+              alt=""
+              class="service-card__image"
+              width="72"
+              height="72"
+              loading="lazy"
+            />
+
+            <h3 class="service-card__title">Fast Delivery</h3>
+
+            <p class="service-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              semper vitae elit eleifend nunc, quam imperdiet.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="images/Quality.svg"
+              alt=""
+              class="service-card__image"
+              width="72"
+              height="72"
+              loading="lazy"
+            />
+
+            <h3 class="service-card__title">Quality Food</h3>
+
+            <p class="service-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              semper vitae elit eleifend nunc, quam imperdiet.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="images/Tasty.svg"
+              alt=""
+              class="service-card__image"
+              width="72"
+              height="72"
+              loading="lazy"
+            />
+
+            <h3 class="service-card__title">Super Tasty</h3>
+
+            <p class="service-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              semper vitae elit eleifend nunc, quam imperdiet.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="container">
+        <div class="container__title"><span>Menu</span></div>
+        <header class="menu__header">
+          <h2 class="menu__title">Choose Your <span>Taste</span></h2>
+        </header>
+
+        <div class="menu__list">
+          <article class="menu-card">
+            <img
+              src="images/menu/vegetables.jpg"
+              alt="Japanies Vegetables"
+              class="menu-card__image"
+              width="368"
+              height="280"
+              loading="lazy"
+            />
+
+            <div class="menu-card__rating">★★★★★</div>
+
+            <h3 class="menu-card__title">Japanies Vegetables</h3>
+
+            <p class="menu-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipsen piscing elit.
+              Maece nas in cursus at tincidunt se. Ipsum tristique volutpat nudu
+              eleme nt.
+            </p>
+
+            <div class="menu-card__footer">
+              <span class="menu-card__price">$40.00</span>
+              <div class="menu-card__actions">
+                <button class="menu-card__like" aria-label="Like">
+                  <img
+                    src="images/menu/icons/heart-line 1.svg"
+                    alt="like"
+                    width="18"
+                    height="18"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="menu-card__share" aria-label="Share">
+                  <img
+                    src="images/menu/icons/Vector.svg"
+                    alt="like"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="images/menu/homeburger.jpg"
+              alt="Special Homeburger"
+              class="menu-card__image"
+              width="368"
+              height="280"
+              loading="lazy"
+            />
+
+            <div class="menu-card__rating">★★★★★</div>
+
+            <h3 class="menu-card__title">Special Homeburger</h3>
+
+            <p class="menu-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipsen piscing elit.
+              Maece nas in cursus at tincidunt se. Ipsum tristique volutpat nudu
+              eleme nt.
+            </p>
+
+            <div class="menu-card__footer">
+              <span class="menu-card__price">$30.00</span>
+              <div class="menu-card__actions">
+                <button class="menu-card__like" aria-label="Like">
+                  <img
+                    src="images/menu/icons/heart-line 1.svg"
+                    alt="like"
+                    width="18"
+                    height="18"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="menu-card__share" aria-label="Share">
+                  <img
+                    src="images/menu/icons/Vector.svg"
+                    alt="like"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="images/menu/noodles.jpg"
+              alt="Japanies Noodles"
+              class="menu-card__image"
+              width="368"
+              height="280"
+              loading="lazy"
+            />
+
+            <div class="menu-card__rating">★★★★★</div>
+
+            <h3 class="menu-card__title">Japanies Noodles</h3>
+
+            <p class="menu-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipsen piscing elit.
+              Maece nas in cursus at tincidunt se. Ipsum tristique volutpat nudu
+              eleme nt.
+            </p>
+
+            <div class="menu-card__footer">
+              <span class="menu-card__price">$55.00</span>
+              <div class="menu-card__actions">
+                <button class="menu-card__like" aria-label="Like">
+                  <img
+                    src="images/menu/icons/heart-line 1.svg"
+                    alt="like"
+                    width="18"
+                    height="18"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="menu-card__share" aria-label="Share">
+                  <img
+                    src="images/menu/icons/Vector.svg"
+                    alt="like"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="images/menu/steak.jpg"
+              alt="Beef Steak"
+              class="menu-card__image"
+              width="368"
+              height="280"
+              loading="lazy"
+            />
+
+            <div class="menu-card__rating">★★★★★</div>
+
+            <h3 class="menu-card__title">Beef Steak</h3>
+
+            <p class="menu-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipsen piscing elit.
+              Maece nas in cursus at tincidunt se. Ipsum tristique volutpat nudu
+              eleme nt.
+            </p>
+
+            <div class="menu-card__footer">
+              <span class="menu-card__price">$45.00</span>
+              <div class="menu-card__actions">
+                <button class="menu-card__like" aria-label="Like">
+                  <img
+                    src="images/menu/icons/heart-line 1.svg"
+                    alt="like"
+                    width="18"
+                    height="18"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="menu-card__share" aria-label="Share">
+                  <img
+                    src="images/menu/icons/Vector.svg"
+                    alt="like"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="images/menu/soup.jpg"
+              alt=""
+              class="menu-card__image"
+              width="368"
+              height="280"
+              loading="lazy"
+            />
+
+            <div class="menu-card__rating">★★★★★</div>
+
+            <h3 class="menu-card__title">Thai Soup</h3>
+
+            <p class="menu-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipsen piscing elit.
+              Maece nas in cursus at tincidunt se. Ipsum tristique volutpat nudu
+              eleme nt.
+            </p>
+
+            <div class="menu-card__footer">
+              <span class="menu-card__price">$60.00</span>
+              <div class="menu-card__actions">
+                <button class="menu-card__like" aria-label="Like">
+                  <img
+                    src="images/menu/icons/heart-line 1.svg"
+                    alt="like"
+                    width="18"
+                    height="18"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="menu-card__share" aria-label="Share">
+                  <img
+                    src="images/menu/icons/Vector.svg"
+                    alt="like"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="images/menu/chicken.jpg"
+              alt="Chicken Stripes"
+              class="menu-card__image"
+              width="368"
+              height="280"
+              loading="lazy"
+            />
+
+            <div class="menu-card__rating">★★★★★</div>
+
+            <h3 class="menu-card__title">Chicken Stripes</h3>
+
+            <p class="menu-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipsen piscing elit.
+              Maece nas in cursus at tincidunt se. Ipsum tristique volutpat nudu
+              eleme nt.
+            </p>
+
+            <div class="menu-card__footer">
+              <span class="menu-card__price">$50.00</span>
+              <div class="menu-card__actions">
+                <button class="menu-card__like" aria-label="Like">
+                  <img
+                    src="images/menu/icons/heart-line 1.svg"
+                    alt="like"
+                    width="18"
+                    height="18"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="menu-card__share" aria-label="Share">
+                  <img
+                    src="images/menu/icons/Vector.svg"
+                    alt="like"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__footer">
+          <a href="#" class="menu__button">
+            See More
+            <svg
+              class="menu__arrow"
+              width="20"
+              height="12"
+              viewBox="0 0 20 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 6H17M17 6L12 1M17 6L12 11"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chef">
+      <div class="container">
+        <header class="chef__header">
+          <h2 class="chef__title">Meet Our <span>Expert</span> Chef</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maece nas
+            in cursus at tincidunt sem. Ipsum tristique volutpat nudu.
+          </p>
+        </header>
+
+        <div class="chef__list">
+          <article class="chef-card">
+            <img
+              src="images/chef/chef-1.jpg"
+              alt="Vishal Khan"
+              class="chef-card__image"
+              width="368"
+              height="441"
+              loading="lazy"
+            />
+            <div class="chef-card__info">
+              <h3 class="chef-card__name">Vishal Khan</h3>
+              <p class="chef-card__position">Head Chef</p>
+            </div>
+          </article>
+
+          <article class="chef-card">
+            <img
+              src="images/chef/chef-2.jpg"
+              alt="Vishal Khan"
+              class="chef-card__image"
+              width="368"
+              height="441"
+              loading="lazy"
+            />
+            <div class="chef-card__info">
+              <h3 class="chef-card__name">Vishal Khan</h3>
+              <p class="chef-card__position">Head Chef</p>
+            </div>
+          </article>
+
+          <article class="chef-card">
+            <img
+              src="images/chef/chef-3.jpg"
+              alt="Mariya Khan"
+              class="chef-card__image"
+              width="368"
+              height="441"
+              loading="lazy"
+            />
+            <div class="chef-card__info">
+              <h3 class="chef-card__name">Mariya Khan</h3>
+              <p class="chef-card__position">Head Chef</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="container">
+        <div class="review__wrapper">
+          <div class="review__image">
+            <img
+              src="images/jhonson.png"
+              alt="Jonson Roy"
+              width="340"
+              height="480"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="review__card">
+            <h3 class="review__name">Jonson Roy</h3>
+            <p class="review__role">Food lover</p>
+
+            <div class="review__rating" aria-label="5 out of 5 stars">
+              ★ ★ ★ ★ ★
+            </div>
+
+            <p class="review__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maece nas
+              in cursus at tincidunt sem. Ipsum tristique volutpat nudu
+              elementum et, vitae purus a scelerisque massa. Cras sit et
+              tristique potenti purus. Pharetra vestibulum, nisl feugiat at
+              commodo diam neque amet.
+            </p>
+
+            <div class="review__controls">
+              <button type="button" aria-label="Previous review">←</button>
+              <button type="button" aria-label="Next review">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__wrapper">
+          <div class="subscribe__content">
+            <h2 class="subscribe__title">Subscribe To Our Newsletter</h2>
+            <p class="subscribe__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              in cursus at tincidunt sem. Ipsum tristique volutpat elementum et,
+            </p>
+          </div>
+
+          <form class="subscribe__form" action="#" method="post">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Enter your email..."
+              required
+            />
+            <button class="subscribe__button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col footer__col-brand">
+            <h3 class="footer__logo">FOOD</h3>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              in cursus at tincidunt sem.
+            </p>
+
+            <div class="footer__social">
+              <a href="#" class="footer__social-link"
+                ><img src="/images/icons-social/fb.svg" alt="fb"
+              /></a>
+              <a href="#" class="footer__social-link"
+                ><img src="/images/icons-social/tw.svg" alt="tw"
+              /></a>
+              <a href="#" class="footer__social-link"
+                ><img src="/images/icons-social/ig.svg" alt="ig"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Support</h4>
+            <ul class="footer__list">
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Our Menu</h4>
+            <ul class="footer__list">
+              <li><a href="#">Special</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Useful Links</h4>
+            <ul class="footer__list">
+              <li><a href="#">Payment & Tax</a></li>
+              <li><a href="#">Terms of Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Get In Touch</h4>
+            <ul class="footer__contact">
+              <li>
+                <a href="mailto:foodemail@gmail.com"> foodemail@gmail.com </a>
+              </li>
+
+              <li>
+                <a href="tel:+254187566154"> +254187566154 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">© 2026 FOOD. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <!-- ДОБАВИТЬ МИКСИНЫ -->
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close menu</span>
+        </button>
+      </form>
+      <nav class="mobile-overlay__nav" aria-label="Mobile navigation">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Home</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Menu</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">About Us</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Restaurant</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </dialog>
+  </body>
+</html>

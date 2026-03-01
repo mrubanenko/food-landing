@@ -14,7 +14,7 @@ Responsive landing page about food, built with **HTML** and **SCSS**.
 - ## Design
 
 The original design was created in Figma:  
-[View Figma Design]([https://www.figma.com/file/XXXXXX/YourProjectName](https://www.figma.com/design/xZ1VQsLl2Zj9dKv4RXEPtq/Untitled--2-?node-id=111-411&t=nUDflHdxnBuYNHbY-0))
+[View Figma Design](https://www.figma.com/design/xZ1VQsLl2Zj9dKv4RXEPtq/Untitled--2-?node-id=111-411&t=nUDflHdxnBuYNHbY-0)
 
 If you want to run it locally:
 
